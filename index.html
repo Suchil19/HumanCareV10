@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--PWA-->
+  <link rel="manifest" href="./manifest.json"> 
+  <title>HumanCare</title>
+  <link rel="shortcut icon" type="image/png" href="./img/inicio/LogoHumanCare.png">
+  <!--BOOTSTRAP-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <!--LO AGREGUE PARA LOS ICONOS-->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <!--Carousel-->
+  <!--Owl2-->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--Carousel-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+  <!--Termina Crousel-->
+  
+
+  <!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+<div id="preloader"></div>
+
+<nav class="main-nav">
+    <div class="nav-content">
+        <ul class="left-content">
+            
+            <li class="nav-item tuggle-btn">
+                <div class="tuggle-btn-content">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+        </ul>
+        <li class="nav-item">
+            <a class="nav-link logo" href="#header"></a>
+        </li>
+        <ul class="right-content">
+        <li style="display: none;" class="logged-out menu-item">
+            <a class="nav-link registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Ingresa | Regístrate</a>
+        </li>
+        <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+            <li style="display: none;" class="menu-item logged-in"><a class="registration" href="./promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li>&nbsp;
+            <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+        </ul>
+    </div>
+    <div class="tuggle-content">
+        <ul class="left-content">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./clinica/acerca-de.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./clinica/especialidades.html">Especialidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./clinica/servicios.html">Servicios</a>
+            </li>
+            <!--li class="nav-item">
+                <a class="nav-link" href="#some-content-4">Únete</a>
+            </li-->
+            <li class="nav-item">
+              <a class="nav-link" href="./clinica/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+	<!--Comienza la seccion del home-->
+	<!--COMIENZA HERO SECTION-->
+<!-- start of hero -->
+<section class="hero-slider hero-style">
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+		<div class="swiper-slide">
+		  <div class="slide-inner slide-bg-image" data-background="./img/inicio/slider/inicio01.jpeg">
+			<div class="container02">
+			  <div data-swiper-parallax="300" class="slide-title">
+				<h2>Human Care Clinic</h2>
+			  </div>
+			  <div data-swiper-parallax="400" class="slide-text">
+				<p>Somos expertos en diseño, desarrollo y redes sociales. <!-- entendemos
+					el mundo moderno y como tener presencia en internet.-->
+				</p>
+			  </div>
+			  <div class="clearfix"></div>
+			  <div data-swiper-parallax="500" class="slide-btns">
+				<a href="./recursos/servicios.html" class="theme-btn-s2">Especialidades</a>
+				<!--a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a-->
+			  </div>
+			</div>
+		  </div>
+		  <!-- end slide-inner -->
+		</div>
+		<!-- end swiper-slide -->
+  
+		<div class="swiper-slide">
+		  <div class="slide-inner slide-bg-image" data-background="./img/inicio/slider/inicio01.jpeg">
+			<div class="container02">
+			  <div data-swiper-parallax="300" class="slide-title">
+				<h2>Human Care Clinic</h2>
+			  </div>
+			  <div data-swiper-parallax="400" class="slide-text">
+				<p>Diseño y Desarrolo WEB, E-comerce, landing page y sitios WEB</p>
+			  </div>
+			  <div class="clearfix"></div>
+			  <div data-swiper-parallax="500" class="slide-btns">
+				<a href="./recursos/servicios.html" class="theme-btn-s2">Ver paquetes</a>
+				<!--a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a-->
+			  </div>
+			</div>
+		  </div>
+		  <!-- end slide-inner -->
+		</div>
+		<!-- end swiper-slide -->
+
+
+		<div class="swiper-slide">
+			<div class="slide-inner slide-bg-image" data-background="./img/inicio/slider/inicio01.jpeg">
+			  <div class="container02">
+				<div data-swiper-parallax="300" class="slide-title">
+				  <h2>Human Care Clinic</h2>
+				</div>
+				<div data-swiper-parallax="400" class="slide-text">
+				  <p>¿Quieres crear una app? Nosotros te ayudamos.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div data-swiper-parallax="500" class="slide-btns">
+				  <a href="#" class="theme-btn-s2">App Móvil</a>
+				  <!--a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a-->
+				</div>
+			  </div>
+			</div>
+			<!-- end slide-inner -->
+		  </div>
+		  <!-- end swiper-slide -->
+
+
+		  <div class="swiper-slide">
+			<div class="slide-inner slide-bg-image" data-background="./img/inicio/slider/inicio01.jpeg">
+			  <div class="container02">
+				<div data-swiper-parallax="300" class="slide-title">
+				  <h2>Human Care Clinic</h2>
+				</div>
+				<div data-swiper-parallax="400" class="slide-text">
+				  <p>Diseño gráfico, diseño y arte digital.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div data-swiper-parallax="500" class="slide-btns">
+				  <a href="#" class="theme-btn-s2">Ver más</a>
+				  <!--a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a-->
+				</div>
+			  </div>
+			</div>
+			<!-- end slide-inner -->
+		  </div>
+		  <!-- end swiper-slide -->
+
+
+		  <div class="swiper-slide">
+			<div class="slide-inner slide-bg-image" data-background="./img/inicio/slider/inicio01.jpeg">
+			  <div class="container02">
+				<div data-swiper-parallax="300" class="slide-title">
+				  <h2>Human Care Clinic</h2>
+				</div>
+				<div data-swiper-parallax="400" class="slide-text">
+				  <p>Quieres mejorar tu marca o llevarla al siguiente nivel? Hagámoslo juntos.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div data-swiper-parallax="500" class="slide-btns">
+				  <a href="#" class="theme-btn-s2">Ver más</a>
+				  <!--a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a-->
+				</div>
+			  </div>
+			</div>
+			<!-- end slide-inner -->
+		  </div>
+		  <!-- end swiper-slide -->
+
+
+		  <div class="swiper-slide">
+			<div class="slide-inner slide-bg-image" data-background="./img/inicio/contenido/urologia.png">
+			  <div class="container02">
+				<div data-swiper-parallax="300" class="slide-title">
+				  <h2>Human Care Clinic</h2>
+				</div>
+				<div data-swiper-parallax="400" class="slide-text">
+				  <p>¿Quieres crecer en las redes sociales? Estas en el lugar indicado.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div data-swiper-parallax="500" class="slide-btns">
+				  <a href="#" class="theme-btn-s2">Ver más</a>
+				  <!--a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a-->
+				</div>
+			  </div>
+			</div>
+			<!-- end slide-inner -->
+		  </div>
+		  <!-- end swiper-slide -->
+
+
+	  </div>
+	  <!-- end swiper-wrapper -->
+  
+	  <!-- swipper controls -->
+	  <div class="swiper-pagination"></div>
+	  <div class="swiper-button-next"></div>
+	  <div class="swiper-button-prev"></div>
+	</div>
+  </section>
+  <!-- end of hero slider -->
+	<!--TERMINA HERO SECTION-->
+
+
+
+<!--ENTRADAS-->
+<!-- itens em blocos -->
+<div class="container-entradas">
+
+
+	<!-- itens em blocos -->
+	<div class="row py-4" style="margin-top: 10px;">
+		<div class="col-md-3 col-sm-6 pb-3 px-2 card-mobile">
+			<div class="card-entrada shadow rounded-lg">
+              <a href="./clinica/convenios.html" class="card-body text-center">
+                <p><i class="grey-text fas fa-handshake fa-3x"></i></p>
+					<h4 class="grey-text">Convenios</h4>
+                <p></p>
+              </a>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6 pb-3 px-2 card-mobile">
+			<div class="card-entrada shadow rounded-lg">
+              <a href="./clinica/urologia.html" class="card-body text-center">
+                <p><i class="grey-text fas fa-lungs fa-3x"></i></p>
+					<h4 class="grey-text">Urología</h4>
+                <p></p>
+              </a>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6 pb-3 px-2 card-mobile">
+			<div class="card-entrada shadow rounded-lg">
+              <a href="./clinica/especialidades.html" class="card-body text-center">
+                <p><i class="grey-text far fa-hospital fa-3x"></i></p>
+					<h4 class="grey-text">Especialidades</h4>
+                
+              </a>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6 pb-3 px-2 card-mobile">
+			<div class="card-entrada shadow rounded-lg">
+              <a href="./clinica/servicios.html" class="card-body text-center">
+                <p><i class="grey-text fas fa-hand-holding-medical fa-3x"></i></p>
+					<h4 class="grey-text">Servicios</h4>
+                
+              </a>
+            </div>
+		</div>
+	</div>
+	<!-- Fim itens em blocos -->
+</div>
+<!--TERMINAN ENTRADAS-->
+
+<!--VIDEO-->
+<!--section>
+	<div class="video-popup">
+		<div class="video-popup-inner">
+			<i class="fas fa-times video-popup-close"></i>
+			<div class="iframe-box">
+				<iframe id="player-1" src="https://www.youtube.com/embed/eLHv4EaDDX4" 
+				allow="accelerometer; autoplay; clipboard-write;  picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+<!--TERMINA VIDEO-->
+
+<!--ASEGURADORAS-->
+
+<!--div class="container-slider">
+  <div class="slider1">
+    <div class="slide-track">
+      
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/humancare.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/bupa.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/mapfre.png" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/gnp.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/metlife.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/seguros-monterrey.png" height="100" width="250" alt="" />
+      </div>
+
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/humancare.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/bupa.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/mapfre.png" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/gnp.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/metlife.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/seguros-monterrey.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/humancare.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      
+    </div>
+  </div>
+  
+<div-->
+
+
+<!--TEAM SECTION-->
+<section class="team section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2><span>Noticias</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="owl-carousel team-carousel">
+        <div class="team-item">
+          <img src="./img/inicio/contenido/urologia.png" alt="team">
+          <h3>Urología</h3>
+          <div class="line"></div>
+          <span>¿Problemas urinarios? que una infección no complique tu vida.
+          </span>
+          <!--AGREGUE EL BR PARA QUE EL CAROUSEL TUVIERA LA MISMA MEDIDA-->
+          <br>
+          <div class="home-btn">
+            <br>
+            <a href="./clinica/urologia.html" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="./img/inicio/contenido/parto.png" alt="team">
+          <h3>Parto y Cesárea</h3>
+          <div class="line"></div>
+          <span>¿Se acerca el momento mas bello de tu vida? vívelo con nosotros.
+          </span>
+          <!--AGREGUE EL BR PARA QUE EL CAROUSEL TUVIERA LA MISMA MEDIDA-->
+          <br>
+          <div class="home-btn">
+            <br>
+            <a href="./clinica/parto-y-cesarea.html" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="./img/inicio/contenido/HappyWoman.png" alt="team">
+          <h3>Ginecología</h3>
+          <div class="line"></div>
+          <span>Cuida tu salud íntima y acude periódicamente con tu ginecólogo.
+          </span>
+          <br>
+          <div class="home-btn">
+            <br>
+            <a href="./clinica/ginecologia.html" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="./img/inicio/contenido/doctores.png" alt="team">
+          <h3>Especialidades</h3>
+          <div class="line"></div>
+          <span>Mira todas las especialidades que ofrecemos en nuestra clínica.</span>
+          <br>
+          <div class="home-btn">
+            <br>
+
+            <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--TEAM SECTION ENDS-->
+
+<!--Cuerpo de el inicio-->
+
+<div class="container1">
+
+<div class="cards">
+ 
+  <div class="card">
+    <div class="card_img card1">
+         
+    </div>
+    <h3>Parto y cesárea</h3>
+    <div class="line">
+    </div>
+    <p> ¿Se acerca el momento mas esperado? Nosotros te podemos ayudar. </p>
+
+
+      <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+
+  </div>
+
+  <div class="card">
+    <div class="card_img card2">
+      <!--div class="plus"><p>+</p></div-->
+    </div>
+    <h3>Servicios</h3>
+    <div class="line">
+    </div>
+   <p> Revisa todos los servicios que te ofrecemos para que tu visita tenga la mejor experiencia. </p>
+   <a href="./clinica/servicios.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  
+
+  <div class="card">
+    <div class="card_img card3">
+      <!--div class="plus"><p>+</p></div-->
+    </div>
+    <h3>Covenios</h3>
+    <div class="line">
+    </div>
+    <p>Aquí puedes revisar todas las aseguradoras con las que tenemos convenio. </p>
+    <a href="./clinica/convenios.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="card">
+    <div class="card_img card4">
+      <!--div class="plus"><p>+</p></div-->
+    </div>
+    <h3>¿Buscas trabajo?</h3>
+    <div class="line">
+    </div>
+    <p>Aquí puedes encontrar las vacantes que tenemos disponibles en este momento en nuestra clinica</p>
+    <a href="./clinica/bolsa-de-trabajo.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+
+    </div>
+  <div class="card">
+    <div class="card_img card5">
+      <!--div class="plus"><p>+</p></div-->
+    </div>
+    <h3>Contactanos</h3>
+    <div class="line">
+    </div>
+   <p> En esta sección puedes encontrar todas las formas en como puedes contactarte con nosotros. </p>
+   <a href="./clinica/contacto.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="card">
+    <div class="card_img card6">
+      <!--div class="plus"><p>+</p></div-->
+    </div>
+    <h3>Acerca de nosotros</h3>
+    <div class="line">
+    </div>
+    <p>Aquí puedes encontrar nuestra misión y visión. </p>
+    <a href="./clinica/acerca-de.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+</div>
+
+</div>
+
+<!--Termina el cuerpo de  inicio-->
+
+<!--MAPA-->
+<br>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="section-title">
+        <h2><span>Visitanos</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="map-responsive">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.266882731378!2d-99.13238188509244!3d19.
+48715038685331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9f79c2c6df3%3A0x6168de18751a1c5d!2s
+Humancare%20Clinic%20-%20Lindavista!5e0!3m2!1ses-419!2smx!4v1617313089600!5m2!1ses-419!2smx" 
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<!--Termina mapa-->
+
+<!--BOTONES DE WHATS Y MESSENGER-->
+<!--a class="float-whatsapp" href="#" target="_blank">
+  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp icon</title><path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345m-5.446 7.443h-.016c-1.77 0-3.524-.48-5.055-1.38l-.36-.214-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-5.445 4.455-9.885 9.942-9.885 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99-.004 5.444-4.46 9.885-9.935 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411"></path></svg></a-->
+
+  <a href="https://m.me/108040221040261" class="float-messenger" href="#" target="_blank">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Messenger icon</title><path d="M0 11.64C0 4.95 5.24 0 12 0s12 4.95 12 11.64-5.24 11.64-12 11.64c-1.21 0-2.38-.16-3.47-.46a.96.96 0 0 0-.64.05L5.5 23.92a.96.96 0 0 1-1.35-.85l-.07-2.14a.97.97 0 0 0-.32-.68A11.39 11.39 0 0 1 0 11.64zm8.32-2.19l-3.52 5.6c-.35.53.32 1.14.82.75l3.79-2.87c.26-.2.6-.2.87 0l2.8 2.1c.84.63 2.04.4 2.6-.48l3.52-5.6c.35-.53-.32-1.13-.82-.75l-3.79 2.87c-.25.2-.6.2-.86 0l-2.8-2.1a1.8 1.8 0 0 0-2.61.48z"></path></svg></a>
+  <!--TERMINAN BOTONES DE WAHTS Y MESSENGER-->
+
+
+
+<!-- REGISTRO FIREBASE -->
+  <!--MAIN CONTENT-->
+<div class="container p-5" style="z-index:1">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <ul class="list-group posts">
+              
+      </ul>
+    </div>
+  </div>
+</div>
+            
+<!--BOOTSTRAP SCRIPTS-->
+
+    <!-- Modal  SignUP-->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">Registro:
+            Contraseña con al menos 6 caracteres
+          </h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+         </div>
+         <div class="modal-body">
+          <form id="signup-form">
+            <div class="form-group">
+               <input type="text" id="signup-email" class="form-control"
+               placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+               <input type="password" id="signup-password" class="form-control"
+               placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+         </div>
+       </div>
+      </div>
+    </div>
+               
+               
+               
+                <!-- Modal  SignIn-->
+                <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                      <h6 class="modal-title" id="exampleModalLabel">Ingresa con tu correo de Gmail a nuestra plataforma y mantente informado sobre
+                        promociones y avisos importantes
+                      </h6>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                     </div>
+                     <div class="modal-body">
+                        
+                      <form id="login-form">
+                         
+                        <!--div class="form-group">
+                           <input type="text" id="login-email" class="form-control"
+                           placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                           <input type="password" id="login-password" class="form-control"
+                           placeholder="Contraseña" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+                        
+                        <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+                        <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+                      </form>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+
+
+                <!-- Top scroll-->
+              <a href="#" class="scrollTopTop"><i class="fas fa-angle-up"></i></a>
+
+         <!-- FOOTER-->
+         <footer id="footer">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+      
+                <div class="col-lg-3 col-md-6 footer-info">
+                  <img src="../img/icon_1024.png" alt="TheEvenet">
+                  <p>Clínica de especialidades médicas y quirúrgicas ubicada en Lindavista CDMX</p>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Acerca de</h4>
+                  <ul>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Acerca de</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Human Care Clinic</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#"> Política de privacidad</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Términos y condiciones</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Menu</h4>
+                  <ul>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Inicio</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Contacto</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Especialidades</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#">Servicios</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 footer-contact">
+                  <h4>Contacto</h4>
+                  <p>
+                    Riobamba 642, Lindavista,<br>
+                    Gustávo A. Madero, 03700, CDMX<br>
+                    <strong>Télefono:</strong> 55 8374 3064<br>
+                    <strong>Email:</strong> contacto@humancareclinic.com<br>
+                  </p>
+      
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/humancareclinicmx" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/humancareclinicmx/" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://g.page/humancarecliniclindavista?share" class="google-plus"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://twitter.com/humancareclinic" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <!--a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a-->
+                  </div>
+      
+                </div>
+      
+              </div>
+            </div>
+          </div>
+      
+          <div class="container">
+            <div class="copyright">
+              &copy; 2021 <strong>Human Care Clinic</strong>. Derechos Reservados.
+            </div>
+            <div class="credits">
+              Desarrollado por <strong><a>Life Solutions MX</a></strong>
+            </div>
+          </div>
+        </footer>
+         <!--TERMINA FOOTER-->
+            
+                <!--FIREBASE SCRIPTS-->
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+            
+              <!-- TODO: Add SDKs for Firebase products that you want to use
+                  https://firebase.google.com/docs/web/setup#available-libraries -->
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+              
+                <script>
+                   // Your web app's Firebase configuration
+                   var firebaseConfig = {
+                apiKey: "AIzaSyD9lnm2-ZB8-L1VYovDD-rIF5jXu8EdTzw",
+                authDomain: "human-care-clinic.firebaseapp.com",
+                projectId: "human-care-clinic",
+                storageBucket: "human-care-clinic.appspot.com",
+                messagingSenderId: "615242911884",
+                appId: "1:615242911884:web:3df2a51c271eeea80baba9",
+                measurementId: "G-BEJYVEMDQX"
+              };
+            
+                  // Initialize Firebase
+                  firebase.initializeApp(firebaseConfig);
+                  const auth = firebase.auth();
+                  // FireStore base de datos
+                  const fs = firebase.firestore();
+                  firebase.analytics();
+                </script>
+                <!--TERMINA FIREBASE-->
+
+     <!-- PWA -->
+     <script src="./script.js"></script>
+
+
+     <!--Registro-->
+     <script src="./registro.js"></script>
+
+     <!-- SLIDER -->
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="./js/script.js"></script>
+  <!-- partial>
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<!-- AOS Script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--Carousel-->
+<script  src="./js/owl.carousel.min.js"></script>
+
+</body>
+</html>

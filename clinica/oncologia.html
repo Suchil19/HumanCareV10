@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--PWA-->
+  <link rel="manifest" href="./manifest.json"> 
+  <title>Oncología | Human Care Lindavista</title>
+  <link rel="shortcut icon" type="image/png" href="../img/inicio/LogoHumanCare.png">
+  <!--BOOTSTRAP-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/oncologia.css">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <!--LO AGREGUE PARA LOS ICONOS-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <!--Owl2-->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+
+</head>
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+<!-- partial:index.partial.html -->
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+<div id="preloader"></div>
+<nav class="main-nav">
+    <div class="nav-content">
+        <ul class="left-content">
+            
+            <li class="nav-item tuggle-btn">
+                <div class="tuggle-btn-content">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+        </ul>
+
+        <li class="nav-item">
+            <a class="nav-link logo" href="#header"></a>
+        </li>
+        <ul class="right-content">
+
+        <li style="display: none;" class="logged-out menu-item">
+            <a class="nav-link registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Ingresa | Regístrate</a>
+        </li>
+
+        <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+            <li style="display: none;" class="menu-item logged-in"><a class="registration" href="../promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li>&nbsp;
+            <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+   
+        </ul>
+
+
+    </div>
+    <div class="tuggle-content">
+        <ul class="left-content">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./acerca-de.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./especialidades.html">Especialidades</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <!--li class="nav-item">
+                <a class="nav-link" href="#some-content-4">Únete</a>
+            </li-->
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--TERMINA EL NAVBAR-->
+
+	<!--Comienza la seccion del home-->
+	<section class="home d-flex align-items-center">
+		<!--div class="effect-wrap">
+			<i class="fas fa-plus effect effect-1"></i>
+			<i class="fas fa-plus effect effect-2"></i>
+			<i class="fas fa-circle-notch effect effect-3"></i>
+		</div-->
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-7">
+					<div class="home-text">
+						<h1>Oncología</h1>
+						<p>
+						Podemos ayudarte, visítanos.
+						</p>
+						<!--div class="home-btn01">
+							<a href="#" class="btn01 btn-1"><i class="fas fa-phone-alt"></i></a>
+							<button type="button" class="btn01 btn-1 video-play-btn">
+								<i class="fas fa-play"></i></button>
+						</div-->
+					</div>
+				</div>
+			  
+			</div>
+
+       <!--SCROLL DOWN-->
+       <div class="container-scroll">
+        <section id="section10" class="demo">
+         
+          <a href="#contenido"><span></span></a>
+        </section>
+       </div>
+       <!--TERMINA SCROLLDOWN-->
+		</div>
+	</section>
+
+
+  <section>
+		<div class="video-popup">
+			<div class="video-popup-inner">
+				<i class="fas fa-times video-popup-close"></i>
+				<div class="iframe-box">
+					<iframe id="player-1" src="https://www.youtube.com/embed/DEpYSW9YhQE" 
+					allow="accelerometer; autoplay; clipboard-write;  picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- Gift Card Section -->
+    <br>
+  <div class="container">
+    <div id="main-div" class="container">
+      <h1>
+        <a href="#">
+          <!--img id="logo-img" class="img-fluid" class="w-75" src="./img/especialidades/convenios/convenios.png" alt="Huddle"-->
+        </a>
+      </h1>
+      <div id="landing-div" class="row align-items-center justify-content-center">
+        <div id="product-img-holder" class="col-12 col-md-7">
+          <img class="img-fluid" src="./img/especialidades/urologia/portada-prueba02.png" alt="main img">
+        </div>
+        <div class="col-12 col-md-5">
+          <h2 class="font-weight-bold text-center text-md-left mt-5 mt-md-0">Oncología</h2>
+          <p class="text-center text-md-left"> 
+            Espacio destinado para una descripción de cada especialidad.
+            Espacio destinado para una descripción de cada especialidad.
+            Espacio destinado para una descripción de cada especialidad.
+          </p>
+          <p class="text-center text-md-left">Horarios de 10:00am - 18:00pm</p>
+        <div id="register-btn-holder" class="d-flex justify-content-center justify-content-md-start">
+          <!--button id="register-btn" type="button" class="btn btn-lg bg-white rounded-pill px-5 text-center">Horarios: 10:00 - 18:00 hrs</button-->
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Termina gif card-->
+
+<section id="contenido"></section>
+<!--TERSTIMONIALS DOCTORES-->
+<!--Testimonials-->
+<section class="testimonials section-padding">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="section-title">
+					<h2><span>Nuestros Especialistas</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="owl-carousel testimonials-carousel">
+
+				<!--div class="testimonial-item">
+					<div class="img-testimonial">
+						<img src="./img/especialidades/urologia/4.jpg" alt="testimonial">
+						<i class="fas fa-quote-right"></i>
+			   		</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet 
+					   dolorem quas officiis numquam quibusdam,
+					   quia sapiente quisquam est aspernatur necessitatibus officia quaerat.
+					   In tempore nemo cumque, cupiditate rerum perspiciatis.</p>
+					<h3>Melissa Benitez</h3>
+					<span>Psicología</span>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div-->
+
+        <div class="testimonial-item">
+					<div class="img-testimonial">
+						<img src="./img/especialidades/urologia/5.png" alt="testimonial">
+						<i class="fas fa-quote-right"></i>
+					</div>
+            <h3>Dr. Gildardo Navarro</h3>
+					  <span>Urología</span>
+					  <p>
+            El destacado Dr. Gildardo Navarro Peña es un especialista en Urología de Alto Nivel. 
+            </p>
+            <p>
+            Experto en Cáncer de Próstata, Cirugía Robótica, Cirugía Laparoscópica, Litiasis Urinaria, Infertilidad Masculina,
+            Uroginecología, Urodinamia y Biopsia de Próstata, entre otras.
+            </p>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+            <br>
+              <div class="home-btn01">
+							<a href="#" class="btn01 btn-1"><i class="fas fa-phone-alt"></i>&nbsp;Haz una cita</a>
+						</div>
+				</div>
+
+        <div class="testimonial-item">
+					<div class="img-testimonial">
+						<img src="./img/especialidades/urologia/5.png" alt="testimonial">
+						<i class="fas fa-quote-right"></i>
+					</div>
+            <h3>Dr. Gildardo Navarro</h3>
+					  <span>Urología</span>
+					  <p>
+            El destacado Dr. Gildardo Navarro Peña es un especialista en Urología de Alto Nivel. 
+            </p>
+            <p>
+            Experto en Cáncer de Próstata, Cirugía Robótica, Cirugía Laparoscópica, Litiasis Urinaria, Infertilidad Masculina,
+            Uroginecología, Urodinamia y Biopsia de Próstata, entre otras.
+            </p>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+            <br>
+              <div class="home-btn01">
+							<a href="#" class="btn01 btn-1"><i class="fas fa-phone-alt"></i>&nbsp;Haz una cita</a>
+						</div>
+				</div>
+
+				<div class="testimonial-item">
+					<div class="img-testimonial">
+						<img src="./img/especialidades/urologia/4.png" alt="testimonial">
+						<i class="fas fa-quote-right"></i>
+					</div>
+            <h3>Dr. Gildardo Navarro</h3>
+					  <span>Urología</span>
+					  <p>
+            El destacado Dr. Gildardo Navarro Peña es un especialista en Urología de Alto Nivel. 
+            </p>
+            <p>
+            Experto en Cáncer de Próstata, Cirugía Robótica, Cirugía Laparoscópica, Litiasis Urinaria, Infertilidad Masculina,
+            Uroginecología, Urodinamia y Biopsia de Próstata, entre otras.
+            </p>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+            <br>
+              <div class="home-btn01">
+							<a href="#" class="btn01 btn-1"><i class="fas fa-phone-alt"></i>&nbsp;Haz una cita</a>
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!--TERMINA TESTIMONIAL DOCTORES-->
+
+
+<!-- MENSAJE Y LOGIN FIREBASE -->
+
+              <!--MAIN CONTENT-->
+              <div class="container p-5" style="z-index:1">
+                <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                    <ul class="list-group posts">
+              
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+ 
+              <!--BOOTSTRAP SCRIPTS-->
+              
+                <!-- Modal  SignUP-->
+                <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                      <h6 class="modal-title" id="exampleModalLabel">Registro:
+                        Contraseña con al menos 6 caracteres
+                      </h6>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                     </div>
+                     <div class="modal-body">
+                      <form id="signup-form">
+                        <div class="form-group">
+                           <input type="text" id="signup-email" class="form-control"
+                           placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                           <input type="password" id="signup-password" class="form-control"
+                           placeholder="Contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignUp</button>
+                      </form>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+               
+               
+               
+                <!-- Modal  SignIn-->
+                <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                      <h6 class="modal-title" id="exampleModalLabel">Ingresa con tu correo de Gmail a nuestra plataforma y mantente informado sobre
+                        promociones y avisos importantes.
+                      </h6>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                     </div>
+                     <div class="modal-body">
+                        
+                      <form id="login-form">
+                         
+                        <!--div class="form-group">
+                           <input type="text" id="login-email" class="form-control"
+                           placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                           <input type="password" id="login-password" class="form-control"
+                           placeholder="Contraseña" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+                        
+                          <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+                        <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+                      </form>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+
+
+<!-- TERMINA MENSAJE Y LOGIN FIREBASE -->
+
+   <!-- FOOTER-->
+  <section id="footer" class="contact-area" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="contact-content text-center">
+                    <a href="#"><img src="../img/inicio/LogoFooterBlanco.png" alt="logo"></a>
+                    <p>Riobamba #642, Col. Lindavista,
+                      Alcaldía. Gustavo A. Madero, CP. 07300, CDMX</p>
+                    <div class="hr"></div>
+                    <h6>Dudas, comentarios, información, citas...</h6>
+                    <h6>55 8374 3064<span>|</span>55 4431 1744</h6>
+                    <div class="contact-social">
+                      <ul>
+                        <li><a href="https://www.facebook.com/humancareclinicmx" class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://m.me/108040221040261" class="hover-target" href=""><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li><a href="https://g.page/humancareclinicmx?share" class="hover-target" href=""><i class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href = "https://wa.me/525519659653?text=Hola, me interesa asistir a sus clinica." class="hover-target" href=""><i class="fab fa-whatsapp"></i></a></li>
+                        <!--li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li-->
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- =============== 1.9 Contact Area End ====================-->
+<!-- =============== 1.9 Footer Area Start ====================-->
+<footer>
+  <p>Proyecto hecho por <a href="https://www.facebook.com/CashMoneyBillionaire/"><img src="../img/inicio/PreWolf.png" alt="logo"></a><!--Vita Solutions--></p>
+</footer>
+<!--TERMINA FOOTER-->
+
+<!--BOTONES DE WHATS Y MESSENGER-->
+<!--a class="float-whatsapp" href="#" target="_blank">
+  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp icon</title><path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345m-5.446 7.443h-.016c-1.77 0-3.524-.48-5.055-1.38l-.36-.214-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-5.445 4.455-9.885 9.942-9.885 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99-.004 5.444-4.46 9.885-9.935 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411"></path></svg></a-->
+
+  <a class="float-messenger" href="https://m.me/108040221040261" target="_blank">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Messenger icon</title><path d="M0 11.64C0 4.95 5.24 0 12 0s12 4.95 12 11.64-5.24 11.64-12 11.64c-1.21 0-2.38-.16-3.47-.46a.96.96 0 0 0-.64.05L5.5 23.92a.96.96 0 0 1-1.35-.85l-.07-2.14a.97.97 0 0 0-.32-.68A11.39 11.39 0 0 1 0 11.64zm8.32-2.19l-3.52 5.6c-.35.53.32 1.14.82.75l3.79-2.87c.26-.2.6-.2.87 0l2.8 2.1c.84.63 2.04.4 2.6-.48l3.52-5.6c.35-.53-.32-1.13-.82-.75l-3.79 2.87c-.25.2-.6.2-.86 0l-2.8-2.1a1.8 1.8 0 0 0-2.61.48z"></path></svg></a>
+  <!--TERMINAN BOTONES DE WAHTS Y MESSENGER-->
+            
+               <!-- Top scroll-->
+               <a href="#" class="scrollTopTop"><i class="fas fa-angle-up"></i></a>
+            
+                <!--FIREBASE SCRIPTS-->
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+            
+              <!-- TODO: Add SDKs for Firebase products that you want to use
+                  https://firebase.google.com/docs/web/setup#available-libraries -->
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+              
+                <script>
+                   // Your web app's Firebase configuration
+                   var firebaseConfig = {
+                apiKey: "AIzaSyD9lnm2-ZB8-L1VYovDD-rIF5jXu8EdTzw",
+                authDomain: "human-care-clinic.firebaseapp.com",
+                projectId: "human-care-clinic",
+                storageBucket: "human-care-clinic.appspot.com",
+                messagingSenderId: "615242911884",
+                appId: "1:615242911884:web:3df2a51c271eeea80baba9",
+                measurementId: "G-BEJYVEMDQX"
+              };
+            
+                  // Initialize Firebase
+                  firebase.initializeApp(firebaseConfig);
+                  const auth = firebase.auth();
+                  // FireStore base de datos
+                  const fs = firebase.firestore();
+                  firebase.analytics();
+                </script>
+                <!--TERMINA FIREBASE-->
+
+<!-- PWA -->
+<script src="./script.js"></script>
+
+<!--Registro-->
+<script src="./registro.js"></script>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="./js/script.js"></script>
+<!-- partial>
+<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<!--Owl2-->
+<script  src="../js/owl.carousel.min.js"></script>
+<!-- AOS Script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+</html>
